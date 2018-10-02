@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Seer",
+  "description": "A prospect tool to identify key info",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+
+  "icons": {
+    "16": "logo-small.png",
+    "48": "logo-small.png",
+    "128": "logo-small.png"
+  },
+  "permissions": [
+  ]
+}
