@@ -1,0 +1,16 @@
+function refresh() {
+    document.getElementById('refreshButton').click();
+}
+
+function findNewLead() {
+  var tableBody = document.getElementsByTagName('tbody');
+  var uniqueID = tableBody[0].childNodes[0].childNodes[5].baseURI;
+  refresh()
+  var checkUniqueID = tableBody[0].childNodes[0].childNodes[5].baseURI;
+
+  if (uniqueID != checkUniqueID) {
+    window.open(checkUniqueID, '_blank');
+  }
+}
+
+window.setInterval(findNewLead, 10000);
